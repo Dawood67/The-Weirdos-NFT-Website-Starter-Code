@@ -74,50 +74,44 @@ export const VideoContainer = styled.div`
   }
 `;
 
-export const rotate = keyframes `
+export const rotate = keyframes`
 
 100%
 {
     transform:rotate(1turn);
 }
 
-`
+`;
 
-export const Round = styled.div` 
+export const Round = styled.div`
+  position: absolute;
+  bottom: 2rem;
+  right: 90%;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid ${(props) => props.theme.text};
+  border-radius: 50%;
 
-position:absolute ;
-bottom:2rem ;
-right:90% ;
-width: 6rem;
-height:6rem ;
-border: 1px solid ${props => props.theme.text} ;
-border-radius:50% ;
-
-img 
-{
-    width: 100% ;
-    height:auto ;
-    animation: ${rotate} 6s linear infinite reverse ;
-}
-
-`
+  img {
+    width: 100%;
+    height: auto;
+    animation: ${rotate} 6s linear infinite reverse;
+  }
+`;
 
 export const Circle = styled.span`
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-width: 3rem ;
-height: 3rem;
-display:flex ;
-justify-content: center ;
-align-items: center ;
-border-radius: 50% ;
-position: absolute ;
-top: 50% ;
-left: 50% ;
-transform: translate(-50% , -50%) ;
-
-background-color: ${props=> props.theme.text} ;
-color:${props => props.theme.body} ;
-font-size: ${props => props.theme.fontxl} ;
-
-
-`
+  background-color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.body};
+  font-size: ${(props) => props.theme.fontxl};
+`;

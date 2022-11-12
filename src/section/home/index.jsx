@@ -8,12 +8,12 @@ import {
   ButtonContainer,
   VideoContainer,
   Round,
-  Circle
+  Circle,
 } from "./elements";
 import Typewriter from "typewriter-effect";
 import Button from "../../components/button/index";
 import GIF from "../../assets/Home Video.mp4";
-import RoundTextBlack from '../../assets/Rounded-Text-Black.png';
+import RoundTextBlack from "../../assets/Rounded-Text-Black.png";
 
 const Home = () => {
   return (
@@ -52,9 +52,7 @@ const Home = () => {
         </Box>
 
         <Round>
-          <Circle> 
-            &#x2193;
-            </Circle>
+          <Circle>&#x2193;</Circle>
           <img src={RoundTextBlack} alt="NFT" />
         </Round>
       </Container>
